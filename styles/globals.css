@@ -11,6 +11,27 @@ a {
   text-decoration: none;
 }
 
+input[type="text"] {
+  padding: 1em;
+  margin: 10px;
+  border: 2;
+  flex: 1;
+  width: 25em;
+  font-size: 1rem;
+  --placeholder-color: #ababab;
+  font-family: inherit;
+}
+
+button {
+  padding: 1em;
+  margin: 10px;
+  border: 0;
+  background: #00bcd4;
+  color: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
 * {
   box-sizing: border-box;
 }
