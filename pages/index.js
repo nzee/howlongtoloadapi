@@ -28,13 +28,15 @@ export default function Home() {
           (data) => {
             const end = new Date().getTime();
             const time = end - start;
+            console.log("data", data);
+            console.log("time", time);
             setTimeTaken(time);
             setSubmit(false);
           }
           // if the url is invalid, display an error message
         )
         .catch((err) => {
-          console.log("error");
+          console.log("error", err);
         });
     }
   }, [submit]);
@@ -57,7 +59,7 @@ export default function Home() {
           Simple interface to check how long an API request takes in
           milliseconds
         </p>
-        <p>Just enter your API Endpoint in below</p>
+        <p>Just enter your API Endpoint below</p>
 
         <div className={styles.grid}>
           {/* input text field that takes in a url */}
